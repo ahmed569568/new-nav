@@ -4,8 +4,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '@app/material.module';
-import { AboutRoutingModule } from './about-routing.module';
-import { AboutComponent } from './about.component';
+import { CarsRoutingModule } from './cars-routing.module';
+import { CarsComponent } from './cars.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
@@ -14,10 +14,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TranslateModule,
     FlexLayoutModule,
     MaterialModule,
-    AboutRoutingModule,
+    CarsRoutingModule,
     FormsModule,
     ReactiveFormsModule
   ],
-  declarations: [AboutComponent]
+  declarations: [CarsComponent]
 })
-export class AboutModule {}
+export class CarsModule {}

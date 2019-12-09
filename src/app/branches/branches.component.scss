@@ -1,0 +1,27 @@
+/*rols*/
+
+$mainbackgroundColor: #242c41;
+$childbackgroundColor: #131b31;
+$backgroundColor: #f2f4fb;
+$mainColor: #fff;
+$childColor: #5069e4;
+
+/*rols*/
+
+.flex-container {
+  padding: 40px;
+  .branch {
+    display: inline-flex;
+    button {
+      margin: 16px 8px;
+      background-color: $childColor;
+      color: $backgroundColor;
+    }
+  }
+  h3 {
+    color: $childColor;
+  }
+  table {
+    width: 100%;
+  }
+}

@@ -4,8 +4,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '@app/material.module';
-import { AboutRoutingModule } from './about-routing.module';
-import { AboutComponent } from './about.component';
+import { SpachialRoutingModule } from './spachial-routing.module';
+import { SpachialComponent } from './spachial.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
@@ -14,10 +14,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TranslateModule,
     FlexLayoutModule,
     MaterialModule,
-    AboutRoutingModule,
+    SpachialRoutingModule,
     FormsModule,
     ReactiveFormsModule
   ],
-  declarations: [AboutComponent]
+  declarations: [SpachialComponent]
 })
-export class AboutModule {}
+export class SpachialModule {}

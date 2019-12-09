@@ -4,8 +4,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '@app/material.module';
-import { AboutRoutingModule } from './about-routing.module';
-import { AboutComponent } from './about.component';
+import { BranchesRoutingModule } from './branches-routing.module';
+import { BranchesComponent } from './branches.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
@@ -14,10 +14,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TranslateModule,
     FlexLayoutModule,
     MaterialModule,
-    AboutRoutingModule,
+    BranchesRoutingModule,
     FormsModule,
     ReactiveFormsModule
   ],
-  declarations: [AboutComponent]
+  declarations: [BranchesComponent]
 })
-export class AboutModule {}
+export class BranchesModule {}

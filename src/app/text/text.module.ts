@@ -4,20 +4,20 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '@app/material.module';
-import { AboutRoutingModule } from './about-routing.module';
-import { AboutComponent } from './about.component';
-
+import { TextRoutingModule } from './text-routing.module';
+import { TextComponent } from './text.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   imports: [
     CommonModule,
     TranslateModule,
     FlexLayoutModule,
     MaterialModule,
-    AboutRoutingModule,
+    TextRoutingModule,
     FormsModule,
     ReactiveFormsModule
   ],
-  declarations: [AboutComponent]
+  declarations: [TextComponent]
 })
-export class AboutModule {}
+export class TextModule {}

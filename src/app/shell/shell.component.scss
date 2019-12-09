@@ -1,3 +1,35 @@
+/*rols*/
+
+$mainbackgroundColor: #242c41;
+$childbackgroundColor: #131b31;
+$mainColor: #fff;
+$childColor: #5069e4;
+$backColor: #e4e4e4;
+
+/*rols*/
+
+mat-toolbar {
+  background: $mainbackgroundColor;
+  color: $backColor;
+  a {
+    margin-left: auto;
+    text-decoration: none;
+    color: $backColor;
+    font-size: 15px;
+    margin-bottom: 10px;
+    img {
+      max-width: 35px;
+      border-radius: 100%;
+      margin-top: 18px;
+    }
+  }
+}
+
+.mat-drawer {
+  height: 100%;
+  background: $mainbackgroundColor;
+}
+
 :host {
   display: flex;
   flex: 1;
@@ -6,6 +38,26 @@
 .mat-sidenav {
   min-width: 270px;
   max-width: 28%;
+  background: $childbackgroundColor;
+  i {
+    margin-right: 8px;
+  }
+  .inspection {
+    font-size: 20px;
+    font-weight: bold;
+    .spection {
+      color: $backColor;
+    }
+  }
+}
+
+mat-panel-title {
+  color: $backColor;
+}
+
+.mat-expansion-panel {
+  background: $mainbackgroundColor;
+  color: $backColor;
 }
 
 .has-border {
@@ -16,9 +68,17 @@
   padding-top: 0;
 }
 
+.dash {
+  color: $childColor;
+}
+
+i {
+  color: $childColor;
+}
+
 .mat-list-item {
   text-decoration: none;
-
+  color: $backColor;
   &:hover {
     background: rgba(0, 0, 0, 0.05);
   }

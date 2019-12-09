@@ -17,16 +17,12 @@ $childColor: #5069e4;
     color: $childColor;
     text-transform: capitalize;
   }
-  .user {
-    font-size: 60px;
-    color: $mainbackgroundColor;
-  }
-  a {
-    margin-left: 25px;
-    text-decoration: none;
-  }
   .about {
     width: 100%;
     margin-top: 15px;
+  }
+  button {
+    background-color: $childColor;
+    color: $backgroundColor;
   }
 }

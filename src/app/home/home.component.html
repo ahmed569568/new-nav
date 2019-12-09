@@ -1,14 +1,54 @@
-<div class="container">
-  <mat-card>
-    <p>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
-    </p>
-    <mat-card-content>
-      <mat-card-title translate>Hello world !</mat-card-title>
-      <mat-card-subtitle>
-        <app-loader [isLoading]="isLoading" size="1.5"></app-loader>
-        <q [hidden]="isLoading">{{ quote }}</q>
-      </mat-card-subtitle>
-    </mat-card-content>
-  </mat-card>
+<!--start branch-->
+<div class="branch">
+  <h2>select branch</h2>
+  <mat-button-toggle-group class="flex-container groub">
+    <a mat-button class="flex-item" routerLink="/about">All Branch</a>
+    <a mat-button class="flex-item" routerLink="/user">Al-Riyadh</a>
+    <a mat-button class="flex-item active" routerLink="/cars">Maka</a>
+    <a mat-button class="flex-item" routerLink="/spachial">Jadaa</a>
+    <a mat-button class="flex-item" routerLink="/branches">More</a>
+  </mat-button-toggle-group>
+  <div class="flex-container">
+    <mat-card class="app-card flex-item">
+      <mat-card-header>
+        <mat-card-title>Select Branch</mat-card-title>
+        <mat-card-subtitle>Last Week</mat-card-subtitle>
+      </mat-card-header>
+      <i class="material-icons">
+        directions_car
+      </i>
+      <mat-card-actions>
+        <button mat-button>checked out car</button><br />
+        <button mat-button>checked in car</button>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card class="app-card flex-item">
+      <mat-card-header>
+        <mat-card-title>Select Branch</mat-card-title>
+        <mat-card-subtitle>Last Week</mat-card-subtitle>
+      </mat-card-header>
+      <i class="material-icons">
+        directions_car
+      </i>
+      <mat-card-actions>
+        <button mat-button>checked out car</button><br />
+        <button mat-button>checked in car</button>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card class="app-card flex-item">
+      <mat-card-header>
+        <mat-card-title>Select Branch</mat-card-title>
+        <mat-card-subtitle>Last Week</mat-card-subtitle>
+      </mat-card-header>
+      <i class="material-icons">
+        directions_car
+      </i>
+      <mat-card-actions>
+        <button mat-button>checked out car</button><br />
+        <button mat-button>checked in car</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>
+
+<!--end branch-->

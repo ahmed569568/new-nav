@@ -1,0 +1,34 @@
+<form class="rouls-about">
+  <h1>change password</h1>
+  <mat-form-field class="about" appearance="outline">
+    <mat-label>Old Password</mat-label>
+    <input matInput placeholder="password" type="password" [formControl]="passwordFormControl" />
+    <mat-icon matSuffix>error_outline</mat-icon>
+    <mat-error *ngIf="passwordFormControl.hasError('password') && !passwordFormControl.hasError('required')">
+      Please enter a valid password address
+    </mat-error>
+    <mat-error *ngIf="passwordFormControl.hasError('required')"> Password is <strong>required</strong> </mat-error>
+  </mat-form-field>
+  <mat-form-field class="about" appearance="outline">
+    <mat-label>New password</mat-label>
+    <input matInput placeholder="New password" type="password" [formControl]="passwordFormControl" />
+    <mat-icon matSuffix>visibility</mat-icon>
+    <mat-error *ngIf="passwordFormControl.hasError('password') && !passwordFormControl.hasError('required')">
+      Please enter a valid password address
+    </mat-error>
+    <mat-error *ngIf="passwordFormControl.hasError('required')"> Password is <strong>required</strong> </mat-error>
+  </mat-form-field>
+  <mat-form-field class="about" appearance="outline">
+    <mat-label>Confirm New Password</mat-label>
+    <input matInput placeholder="Confirm New password" type="password" [formControl]="passwordFormControl" />
+    <mat-icon matSuffix>done</mat-icon>
+    <mat-error *ngIf="passwordFormControl.hasError('password') && !passwordFormControl.hasError('required')">
+      Please enter a valid password address
+    </mat-error>
+    <mat-error *ngIf="passwordFormControl.hasError('required')"> Password is <strong>required</strong> </mat-error>
+  </mat-form-field>
+  <button mat-button color="primary">
+    Save
+    <mat-icon matSuffix>save</mat-icon>
+  </button>
+</form>

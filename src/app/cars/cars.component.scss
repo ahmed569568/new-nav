@@ -1,0 +1,43 @@
+/*rols*/
+
+$mainbackgroundColor: #242c41;
+$childbackgroundColor: #131b31;
+$backgroundColor: #f2f4fb;
+$mainColor: #fff;
+$childColor: #5069e4;
+
+/*rols*/
+
+.newbranch {
+  background: $backgroundColor;
+  padding: 40px;
+  h3 {
+    text-transform: capitalize;
+  }
+  mat-form-field {
+    width: 300px;
+  }
+  .mat-form-field-flex {
+    background-color: $mainColor;
+  }
+  button {
+    background-color: $childColor;
+    color: $backgroundColor;
+  }
+}
+
+.addbranch {
+  padding: 40px;
+  h2 {
+    text-transform: capitalize;
+    color: $childColor;
+  }
+  table {
+    width: 100%;
+  }
+  button {
+    margin: 16px 8px;
+    background-color: $childColor;
+    color: $mainColor;
+  }
+}

@@ -1,0 +1,37 @@
+$mainbackgroundColor: #242c41;
+$childbackgroundColor: #131b31;
+$backgroundColor: #f2f4fb;
+$mainColor: #fff;
+$childColor: #5069e4;
+
+/*rols*/
+
+.adduser {
+  padding: 40px;
+  h2 {
+    color: $childColor;
+    text-transform: capitalize;
+  }
+  .flex-container {
+    display: flex;
+    @media (max-width: 1180px) {
+      flex-wrap: wrap;
+    }
+  }
+  .user {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    button {
+      margin: 16px 8px;
+      background-color: $childColor;
+      color: $mainColor;
+    }
+  }
+  .branch {
+    width: 400px;
+  }
+  .branches {
+    flex-wrap: wrap;
+  }
+}

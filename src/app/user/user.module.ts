@@ -4,8 +4,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '@app/material.module';
-import { AboutRoutingModule } from './about-routing.module';
-import { AboutComponent } from './about.component';
+import { UserRoutingModule } from './user-routing.module';
+import { UserComponent } from './user.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
@@ -14,10 +14,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TranslateModule,
     FlexLayoutModule,
     MaterialModule,
-    AboutRoutingModule,
+    UserRoutingModule,
     FormsModule,
     ReactiveFormsModule
   ],
-  declarations: [AboutComponent]
+  declarations: [UserComponent]
 })
-export class AboutModule {}
+export class UserModule {}
