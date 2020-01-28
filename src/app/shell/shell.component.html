@@ -1,95 +1,63 @@
 <div fxFlex>
   <mat-sidenav-container fxFill>
     <mat-sidenav
+      [ngClass]="{ openMenu: openMenu, closedMenu: !openMenu }"
       #sidenav
       [mode]="isMobile ? 'over' : 'side'"
       [opened]="!isMobile"
-      [disableClose]="!isMobile"
-      ngClass.gt-sm="has-border"
     >
       <mat-toolbar class="inspect">
+        <span class="evento" translate> evntoo</span>
+      </mat-toolbar>
+      <mat-toolbar class="inspect">
         <span class="inspection" translate>
-          <i class="work material-icons spection"></i>
-          Inspection</span
+          <img class="img" src="../../assets/download.jpg" />
+          Acme Corporation</span
         >
-        <div fxFlex></div>
-
-        <div>
-          <button mat-icon-button [matMenuTriggerFor]="userMenu" translate>
-            <mat-icon>person</mat-icon>
-          </button>
-          <mat-menu #userMenu="matMenu">
-            <button mat-menu-item (click)="logout()" translate>Logout</button>
-          </mat-menu>
-        </div>
-        <div>
-          <button mat-icon-button [matMenuTriggerFor]="languageMenu">
-            <mat-icon>language</mat-icon>
-          </button>
-          <mat-menu #languageMenu="matMenu">
-            <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">
-              {{ language }}
-            </button>
-          </mat-menu>
-        </div>
       </mat-toolbar>
-      <nav>
-        <mat-list>
-          <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/home" routerLinkActive="active" (click)="isMobile && sidenav.close()">
-            <i class="material-icons">
-              directions_car
+      <mat-list class="lists">
+        <mat-list-item class="home list-item-custom">
+          <i class="material-icons home"></i>
+          <span>
+            Home
+          </span>
+        </mat-list-item>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <i style="color: gray;" class="material-icons border_all"></i>
+            <span>
+              Services
+            </span>
+          </mat-expansion-panel-header>
+          <mat-list>
+            <a mat-list-item class="active">Add a New Service</a>
+            <a mat-list-item>Manage my services</a>
+            <a mat-list-item>Add-one</a>
+            <a mat-list-item>Offers & discounts</a>
+            <a mat-list-item>packages</a>
+          </mat-list>
+        </mat-expansion-panel>
+        <ul class="list ">
+          <li class="order list-item-custom">
+            <i class="material-icons ">
+              reorder
             </i>
-            <span class="dash" translate>Dashboard</span>
-          </a>
-          <mat-divider></mat-divider>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <i class="material-icons list"> </i>
-              <span>
-                Data Management
-              </span>
-            </mat-expansion-panel-header>
-            <mat-list>
-              <a mat-list-item routerLink="/branches">Branches</a>
-              <a mat-list-item routerLink="/cars">Cars</a>
-              <a mat-list-item routerLink="/spachial">Spachial</a>
-              <a mat-list-item routerLink="/user">User</a>
-            </mat-list>
-          </mat-expansion-panel>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <i class="material-icons list"> </i>
-              <span>
-                Check Out / In
-              </span>
-            </mat-expansion-panel-header>
-            <mat-list>
-              <a mat-list-item routerLink="/cars">New Cars</a>
-              <a mat-list-item routerLink="/user">User Cars</a>
-            </mat-list>
-          </mat-expansion-panel>
-          <a mat-list-item routerLink="/about" routerLinkActive="active" (click)="isMobile && sidenav.close()">
-            <i class="material-icons">
-              sports_golf
+            Orders
+          </li>
+          <li class="Financials list-item-custom">
+            <i class="material-icons ">
+              sort
             </i>
-            <span translate>About Profile</span>
-          </a>
-          <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/text" routerLinkActive="active" (click)="isMobile && sidenav.close()">
-            <i class="material-icons"> lock</i>
-            <span translate>Change Password</span>
-          </a>
-          <mat-divider></mat-divider>
-        </mat-list>
-      </nav>
+            Financials
+          </li>
+        </ul>
+      </mat-list>
+      <button class="closeNav" (click)="toggleMenuSize()"><span>>>></span> Minimize sidebar</button>
     </mat-sidenav>
-    <mat-sidenav-content>
-      <mat-toolbar class="mat-elevation-z6">
-        <span>{{ title }}</span>
-        <a routerLink="home"> <img src="../../assets/user.jpg" />ahmed ezzat</a>
-      </mat-toolbar>
-      <router-outlet></router-outlet>
-    </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
+<button class="openNav" (click)="toggleMenuSize()">
+  <i class="material-icons">
+    reorder
+  </i>
+</button>

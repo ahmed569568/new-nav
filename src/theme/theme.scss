@@ -3,9 +3,11 @@
  * Framework overrides and customization goes here.
  */
 
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 // stylelint-disable-next-line selector-max-universal
 * {
   box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 html,
@@ -14,4 +16,20 @@ body {
   flex-direction: column;
   margin: 0;
   height: 100%;
+}
+
+.mat-expansion-panel-body {
+  padding: 0 !important;
+  .mat-list-item-content {
+    padding-left: 55px !important;
+  }
+}
+
+.mat-expansion-panel-header {
+  .mat-content {
+    align-items: center;
+    span {
+      margin-top: 0 !important;
+    }
+  }
 }
